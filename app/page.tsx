@@ -1,19 +1,16 @@
-import { Button } from "@/components/ui/button"
+import { AppContext } from "@/components/common"
+import { Skeleton } from "@/components/ui"
 
-export default function Page() {
-  return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+// [요구 사항]
+// ⭐️ 화면 명세서 => 기능 명세서 => 화면 설계서 => 컴포넌트 설계서 => 컴포넌트 구현
+function Home() {
+    return (
+        <div className="flex h-full w-full gap-2">
+            <AppContext />
+            {/* 아이디어 구조화 / 사업계획서 도출 */}
+            <Skeleton className="flex-1" />
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
-  )
+    )
 }
+
+export default Home
