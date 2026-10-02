@@ -1,11 +1,9 @@
-## Markdown
-
+---
 name: Feature Request
 about: 새로운 기능 개발을 제안합니다.
-title: '[FEAT] '
-labels: 'enhancement'
-assignees: ''
-
+title: "[FEAT] "
+labels: "enhancement"
+assignees: ""
 ---
 
 ## 📌 기능 개요
